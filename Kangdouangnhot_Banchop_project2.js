@@ -13,4 +13,4 @@ if( cell === true ){
 }
 };
 
-cellCondition( "Cell is good", "Cell is bad" );
+cellCondition( "cell is that is good", "cell that is bad" );
