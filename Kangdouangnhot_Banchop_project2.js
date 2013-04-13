@@ -51,6 +51,6 @@ cellCondition( "cell that is good", "cell that is bad" );
 
 checkCells( "Checking cells ", " please wait..." );
 
-
+ 
 
 
