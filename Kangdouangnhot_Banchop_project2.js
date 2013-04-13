@@ -5,6 +5,7 @@
 
 
 
+//Cell output conditions
 
 var cellCondition = function ( good, bad ) {
 	var cell = true;
@@ -14,3 +15,14 @@ if( cell === true ){
 };
 
 cellCondition( "cell is that is good", "cell that is bad" );
+
+
+var checkCells = funcion (con){
+for( var i = 0; i < 4; i++ ) {
+	console.log(i);
+	var bCell = [ "Cell 1 good", "Cell 2 good", "Cell 3 bad!", "Cell 4 good" ];
+	
+}
+};
+
+checkCells("Checking cells");
