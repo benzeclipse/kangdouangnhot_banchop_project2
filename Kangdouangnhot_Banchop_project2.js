@@ -1,5 +1,5 @@
 // alert("JavaScript works!");
-// Banchop Ben Kangdouangnht
+// Banchop Ben Kangdouangnhot
 // SDI 1304
 // Project 2
 
@@ -23,26 +23,27 @@ if( cell === true ){
 
 // checking number of cells conditions
 
-var checkCells = function ( con , i ){
-while( check <  4 ) {
+var checkCells = function ( checkCell , message ) {
+
+while ( check <  4 ) {
     check++;
 	console.log( con + check + i );
 	var cells = [ " Cell 1 good ", " Cell 2 good ", "Cell 3 bad! ", " Cell 4 good " ];
 };
 
-//  checking when cells are over 8 and would then be considered bad
+//  checking when cells are over 8 mv (milliVolts reading) and would then be considered bad
 
 if ( cell1 < 8 && cell2 < 8 && cell3 < 8 && cell4 < 8 ) { 
 	console.log("Cells 1, 2, 3, and 4 are good...");
 	 }
 	
-// if cells all checks good, this block of code would then run and output a bad cell #	
+// if all cells checks good, this block of code would then run and output a bad cell #	
 	 
-else { console.log(cells[2]) }
+else { console.log(cells[2] ) }
 
+};
 
-
-}
+// calling the cellCondition and checkCells function
 
 cellCondition( "cell that is good", "cell that is bad" );
 
