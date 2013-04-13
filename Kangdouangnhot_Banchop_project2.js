@@ -12,6 +12,7 @@ var cell2 = 5;
 var cell4 = 5;
 
 var getReadings = function (m) {
+// returning bad cell reading
     var mV = 15.5;
     return mV;
 };
@@ -35,12 +36,12 @@ while ( check <  4 ) {
 };
 
 
-//  checking when cells are over 8 mv (milliVolts reading) and would then be considered bad
+//  checking when cells under 8 (milliVolts reading) anything over would be bad
 if ( cell1 < 8 && cell2 < 8 && cell3 < 8 && cell4 < 8 ) { 
 	console.log("Cells 1, 2, 3, and 4 are good...");
 	 }
 
-// if all cells checks good, this block of code would then run and output a bad cell #	
+// if a single cells checks false, this block of code would then run and output a bad cell #	
 else { console.log(cells[2] ) }
 
 
