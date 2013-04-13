@@ -1,8 +1,6 @@
-alert("JavaScript works!");
-//
+// alert("JavaScript works!");
+// Banchop Ben Kangdouangnht
+// SDI 1304
+// Project 2
 
-//testing testing testing 1....2......3...//
 
-//testing 4...5.555.....666///
-
-//testing 77...8..99
