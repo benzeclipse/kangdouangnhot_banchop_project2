@@ -52,9 +52,13 @@ cellCondition( "cell that is good", "cell that is bad" );
 checkCells( "Checking cells ", " please wait..." );
 
 <<<<<<< HEAD
+<<<<<<< HEAD
  
 =======
  
 
+=======
+ 
+>>>>>>> 7ee255f5f2b1a2dce21cf8d4559d601fa646597b
 
 >>>>>>> 7ee255f5f2b1a2dce21cf8d4559d601fa646597b
