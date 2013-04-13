@@ -3,7 +3,7 @@
 // SDI 1304
 // Project 2
 
-
+var check =  0;
 
 //Cell output conditions
 
@@ -14,15 +14,16 @@ if( cell === true ){
 }
 };
 
-cellCondition( "cell is that is good", "cell that is bad" );
+cellCondition( "cell that is good", "cell that is bad" );
 
 
-var checkCells = funcion (con){
-for( var i = 0; i < 4; i++ ) {
-	console.log(i);
-	var bCell = [ "Cell 1 good", "Cell 2 good", "Cell 3 bad!", "Cell 4 good" ];
+var checkCells = function (con){
+while( check <  4 ) {
+    check++;
+	console.log(con + check);
+	var bCell = [ " Cell 1 good ", " Cell 2 good ", " Cell 3 bad! ", " Cell 4 good " ];
 	
 }
 };
 
-checkCells("Checking cells");
+checkCells("Checking cells ");
