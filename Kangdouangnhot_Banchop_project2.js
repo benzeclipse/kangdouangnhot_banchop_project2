@@ -2,6 +2,8 @@
 // Banchop Ben Kangdouangnhot
 // SDI 1304
 // Project 2
+//testing 1..2..3..
+
 
 // variables
 
@@ -27,7 +29,7 @@ var checkCells = function ( checkCell , message ) {
 
 while ( check <  4 ) {
     check++;
-	console.log( con + check + i );
+	console.log( checkCell + check + message );
 	var cells = [ " Cell 1 good ", " Cell 2 good ", "Cell 3 bad! ", " Cell 4 good " ];
 };
 
@@ -36,9 +38,9 @@ while ( check <  4 ) {
 if ( cell1 < 8 && cell2 < 8 && cell3 < 8 && cell4 < 8 ) { 
 	console.log("Cells 1, 2, 3, and 4 are good...");
 	 }
-	
+
 // if all cells checks good, this block of code would then run and output a bad cell #	
-	 
+
 else { console.log(cells[2] ) }
 
 };
@@ -49,6 +51,4 @@ cellCondition( "cell that is good", "cell that is bad" );
 
 checkCells( "Checking cells ", " please wait..." );
 
-
-
-
+ 
