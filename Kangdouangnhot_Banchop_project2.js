@@ -3,14 +3,13 @@
 // SDI 1304
 // Project 2
 
-
 // variables
-var check =  0;
-var cell3 = 15;
-var cell1 = 5; 
-var cell2 = 5; 
-var cell4 = 5;
-var callTech = "1-800-555-5555"
+var check =  0,
+    cell3 = 15,
+    cell1 = 5,
+    cell2 = 5,
+    cell4 = 5,
+    callTech = "1-800-555-5555";
 
 // Cell output conditions
 var cellCondition = function ( good, bad, mV ) {
@@ -18,6 +17,11 @@ var cellCondition = function ( good, bad, mV ) {
 if( cell === true ){
 	console.log("You have" + good + ", you have a " + bad  + mV + " milliVolts");
 }
+else {
+	console.log("Checking");
+}
+
+return cell;
 
 };
 
@@ -28,14 +32,15 @@ var getReadings = function(m){
 };
 
 
-var getFeedBack = function ( feed ) {
+var getFeedBack = function ( f ) {
 	var feed = "please be patient..."
 	console.log("Thank you for waiting, " + feed);
+
 };
 
 
 // checking number of cells conditions
-var checkCells = function ( checkCell , message ) {
+var getCheckCells = function ( checkCell , message ) {
 
 while ( check <  4 ) {
     check++;
@@ -52,16 +57,11 @@ if ( cell1 < 8 && cell2 < 8 && cell3 < 8 && cell4 < 8 ) {
 // if a single cells checks false, this block of code would then run and output a bad cell #	
 else { console.log(cells[2] , "Please call" , callTech ) }
 
-
 };
-
-
 
 // calling the cellCondition and checkCells function
 
-getFeedBack( );
-
-checkCells( "Checking cells ", " please wait..." );
+getCheckCells( "Checking cells ", " please wait..." );
 
 var mV = getReadings(mV);
 
