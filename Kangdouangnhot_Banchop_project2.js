@@ -4,15 +4,11 @@
 // Project 2
 
 // variables
-var check =  0,
-    cell3 = 15,
-    cell1 = 5,
-    cell2 = 5,
-    cell4 = 5,
+
     callTech = "1-800-555-5555";
 
 // Cell output conditions
-var cellCondition = function ( good, bad, mV ) {
+var cellCondition = function ( good, bad, mV , f) {
 	var cell = true;
 if( cell === true ){
 	console.log("You have" + good + ", you have a " + bad  + mV + " milliVolts");
@@ -27,20 +23,25 @@ return cell;
 
 var getReadings = function(m){
 // returning bad cell reading
-    var mV = 15.5;
+    var mV = 5 + 10.5;
     return mV;
 };
 
 
-var getFeedBack = function ( f ) {
-	var feed = "please be patient..."
-	console.log("Thank you for waiting, " + feed);
-
+var getFeedBack = function ( ) {
+	var feed = ", Thank you for your time..."
+    return feed;
 };
 
 
 // checking number of cells conditions
-var getCheckCells = function ( checkCell , message ) {
+var getCheckCells = function ( checkCell , message, feed ) {
+
+var check =  0,
+    cell3 = 15,
+    cell1 = 5,
+    cell2 = 5,
+    cell4 = 5;
 
 while ( check <  4 ) {
     check++;
@@ -55,15 +56,17 @@ if ( cell1 < 8 && cell2 < 8 && cell3 < 8 && cell4 < 8 ) {
 	 }
 
 // if a single cells checks false, this block of code would then run and output a bad cell #	
-else { console.log(cells[2] , "Please call" , callTech ) }
+else { console.log(cells[2] , "Please call" , callTech + feed ) }
 
 };
 
 // calling the cellCondition and checkCells function
 
-getCheckCells( "Checking cells ", " please wait..." );
+var feedBack = getFeedBack();
 
-var mV = getReadings(mV);
+getCheckCells( "Checking cells ", " please wait...", feedBack );
+
+var mV = getReadings ( mV );
 
 cellCondition( " 3 good cells", "cell that is reading " , mV );
 
