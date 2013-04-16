@@ -5,10 +5,10 @@
 
 // variables
 
-    callTech = "1-800-555-5555";
+var callTech = "1-800-555-5555";
 
 // Cell output conditions
-var cellCondition = function ( good, bad, mV , f) {
+var cellCondition = function ( good, bad, mV ) {
 	var cell = true;
 if( cell === true ){
 	console.log("You have" + good + ", you have a " + bad  + mV + " milliVolts");
@@ -16,7 +16,6 @@ if( cell === true ){
 else {
 	console.log("Checking");
 }
-
 return cell;
 
 };
@@ -28,7 +27,7 @@ var getReadings = function(m){
 };
 
 
-var getFeedBack = function ( ) {
+var getFeedBack = function( ){
 	var feed = ", Thank you for your time..."
     return feed;
 };
@@ -66,7 +65,7 @@ var feedBack = getFeedBack();
 
 getCheckCells( "Checking cells ", " please wait...", feedBack );
 
-var mV = getReadings ( mV );
+var mV = getReadings ();
 
 cellCondition( " 3 good cells", "cell that is reading " , mV );
 
